@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #3b82f6;
+  --color-secondary: #0ea5e9;
+  --color-accent: #06b6d4;
+  --color-high-tech: #22d3ee;
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Base Variables (Dark Mode as Default) */
+:root {
+  --background: #020617;
+  --foreground: #f1f5f9;
+  --border: rgba(255, 255, 255, 0.05);
+}
+
+/* Light Mode Variables */
+.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply transition-colors duration-300;
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+/* Custom High-Tech Utilities */
+.glass {
+  @apply dark:bg-slate-950/80 backdrop-blur-xl border border-white/20 dark:border-blue-500/20 shadow-lg dark:shadow-blue-900/10;
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+
+.light .text-glow,
+[data-theme='light'] .text-glow {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.grid-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.light .grid-bg,
+[data-theme='light'] .grid-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
