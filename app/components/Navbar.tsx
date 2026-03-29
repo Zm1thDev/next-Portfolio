@@ -111,7 +111,7 @@ const Navbar = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://drive.google.com/file/d/1awUaKGrpR2TFFK8iHzhslkTYWFpw7Xu0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Asz_Q2rU353icwonFX7R4CqxEoKD7peP/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-1.5 rounded-full border border-primary/30 text-sm font-semibold hover:bg-primary/10 transition-all cursor-pointer"

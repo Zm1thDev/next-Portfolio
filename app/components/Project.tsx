@@ -111,6 +111,27 @@ const Project = () => {
       ],
       github: "https://github.com/Zm1thDev/checkname",
     },
+    {
+      title: "Income and expenditure system",
+      desc: "The income and expense system is a mini project.",
+      longDesc: "The income and expense system is a web application mini-project developed to record and track daily income and expenses.",
+      tech: ["Next.js", "TypeScript", "Tailwind css", "MySQL"],
+      images: [
+        "/images/projects4/project-0.jpg",
+        "/images/projects4/project-1.jpg",
+        "/images/projects4/project-2.jpg",
+        "/images/projects4/project-3.jpg",
+        "/images/projects4/project-4.jpg",
+      ],
+      features: [
+        "Login / Register to access the system.",
+        "Record income and expense transactions.",
+        "Filter all transactions, including income and expense.",
+        "Dashboard displaying comparisons and spending.",
+        "Export data as a CSV file."
+      ],
+      github: "https://github.com/Zm1thDev/Income-expenses",
+    },
   ];
 
   const nextImage = (e: React.MouseEvent) => {
