@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 import {
-  SiTypescript, SiReact,SiNextdotjs, SiTailwindcss, SiNodedotjs, SiPostgresql, SiDocker, SiMysql, SiExpress 
+  SiTypescript, SiReact,SiNextdotjs, SiTailwindcss, SiNodedotjs, SiPostgresql, SiDocker, SiMysql, SiExpress, SiPhp, SiXampp  
 } from "react-icons/si";
 import { FaHtml5, FaCss3Alt,FaBootstrap, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -39,6 +39,7 @@ const About = () => {
   const allSkills = [
     { name: "HTML", icon: <FaHtml5 className="text-[#E34F26]" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-[#1572B6]" /> },
+    { name: "PHP", icon: <SiPhp className="text-[#777BB4]" /> },
     { name: "Javascript", icon: <IoLogoJavascript className="text-[#F7DF1E]" /> },
     { name: "Typescript", icon: <SiTypescript className="text-[#3178C6]" /> },
     { name: "React", icon: <SiReact className="text-[#61DAFB]" /> },
@@ -50,6 +51,7 @@ const About = () => {
     { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
     { name: "PostgreSQL", icon: <SiPostgresql className="text-[#4169E1]" /> },
     { name: "Docker", icon: <SiDocker className="text-[#2496ED]" /> },
+    { name: "XAMPP", icon: <SiXampp className="text-[#FB7A24]" /> },
     { name: "GitHub", icon: <FaGithub className="text-foreground" /> },
   ];
 
